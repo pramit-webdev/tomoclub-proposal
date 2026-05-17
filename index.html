@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Smarter Classrooms: AI in Assessments & Personalization | TomoClub Submission</title>
+    <meta name="description" content="A comprehensive professional development workshop for educators on using AI in assessments and personalization responsibly.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TOP UTILITY NAVIGATION -->
+    <header class="app-header no-print">
+        <div class="header-logo">
+            <span class="logo-dot"></span>
+            <strong>TomoClub</strong> Proposal
+        </div>
+        <div class="view-toggles">
+            <button id="view-slides-btn" class="nav-toggle active">
+                <span class="btn-icon">🖥️</span> Slide Presentation
+            </button>
+            <button id="view-report-btn" class="nav-toggle">
+                <span class="btn-icon">📄</span> Submission Report
+            </button>
+        </div>
+        <div class="utility-actions">
+            <button id="portal-toggle-btn" class="action-btn">
+                <span class="btn-icon">🎙️</span> Presenter Portal (P)
+            </button>
+            <button id="print-doc-btn" class="action-btn highlight-btn" style="display: none;">
+                <span class="btn-icon">🖨️</span> Save as PDF
+            </button>
+        </div>
+    </header>
+
+    <!-- INTERACTIVE SLIDE DECK CONTAINER -->
+    <div id="presentation-container" class="active-view">
+        <div id="slides-wrapper">
+            
+            <!-- SLIDE 1: Title Slide -->
+            <section class="slide active title-slide" id="slide-1">
+                <div class="hero-overlay"></div>
+                <div class="content">
+                    <span class="badge">Curriculum Development Assignment</span>
+                    <h1>Designing Smarter Classrooms:</h1>
+                    <h2>AI Use in Assessments & Personalized Learning</h2>
+                    <div class="footer-meta">
+                        <p class="prepared-by">Prepared for: <strong>TomoClub Selection Committee</strong></p>
+                        <p class="author">By: <strong>Pramit Das</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: Context & Educator Pain Points -->
+            <section class="slide" id="slide-2">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">02</span>
+                        <h2>The Educator's Dilemma</h2>
+                        <p class="subtitle">Context & Core Pain Points in Modern Classrooms</p>
+                    </div>
+                    <div class="grid-3">
+                        <div class="problems-card border-indigo">
+                            <div class="card-icon">🕒</div>
+                            <h3>Workload Burnout</h3>
+                            <p>Teachers spend over <strong>10+ hours per week</strong> designing assessments, grading, and planning lessons. This leaves little time for direct student interaction.</p>
+                        </div>
+                        <div class="problems-card border-emerald">
+                            <div class="card-icon">🧩</div>
+                            <h3>The Differentiation Gap</h3>
+                            <p>Managing classrooms of 30+ students with highly diverse reading speeds, linguistic backgrounds, and accessibility needs is nearly impossible to do manually.</p>
+                        </div>
+                        <div class="problems-card border-cyan">
+                            <div class="card-icon">🛡️</div>
+                            <h3>The Integrity Crisis</h3>
+                            <p>The rise of generative AI has created panic around student cheating. Teachers are trapped in a counterproductive "arms race" using inaccurate plagiarism detectors.</p>
+                        </div>
+                    </div>
+                    <div class="banner-quote">
+                        <p><strong>Core Solution Statement:</strong> We must transition AI from a <em>threat to academic integrity</em> into an <strong>educator's co-pilot</strong> that automates grading and planning while preserving human relationship and student agency.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: Workshop Overview -->
+            <section class="slide" id="slide-3">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">03</span>
+                        <h2>Workshop Design Overview</h2>
+                        <p class="subtitle">A Practical, Hands-on Professional Development Session</p>
+                    </div>
+                    <div class="grid-2">
+                        <div class="table-container">
+                            <table class="premium-table">
+                                <thead>
+                                    <tr>
+                                        <th>Session Attribute</th>
+                                        <th>Workshop Specifications</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Title</strong></td>
+                                        <td>Designing Smarter Classrooms: AI in Assessments & Personalization</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Target Audience</strong></td>
+                                        <td>K-12 Educators, Instructional Coaches, & School Leaders</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Duration</strong></td>
+                                        <td>2 Hours (120 Minutes) - High Engagement Sync Block</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Delivery Formats</strong></td>
+                                        <td>Synchronous (Virtual/In-Person) + Asynchronous Adaptations</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Pedagogical Model</strong></td>
+                                        <td>Hands-on "Sandwich" Model (Short Inputs + Active Creation)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="card-column">
+                            <div class="core-idea-card glass-glow">
+                                <h3>Workshop Design Philosophy</h3>
+                                <p>This workshop is <strong>not</strong> theoretical. Teachers don't just watch slides. They active-build, audit AI outputs, and design resources they can immediately use in their classrooms tomorrow morning.</p>
+                            </div>
+                            <div class="goals-box-compact">
+                                <h3>Expected Key Takeaways</h3>
+                                <div class="mini-goals-grid">
+                                    <div class="mini-goal">🚀 Battle-tested AI prompt library</div>
+                                    <div class="mini-goal">🛡️ Classroom academic integrity protocol</div>
+                                    <div class="mini-goal">📝 2 Completed AI-assisted resources</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: Learning Objectives -->
+            <section class="slide" id="slide-4">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">04</span>
+                        <h2>Learning Objectives</h2>
+                        <p class="subtitle">Actionable, Measurable Pedagogical Outcomes for Educators</p>
+                    </div>
+                    <div class="objectives-grid">
+                        <div class="obj-card" data-type="understand">
+                            <div class="obj-badge bg-indigo">Understand</div>
+                            <h3>AI's Role & Pedagogy</h3>
+                            <p>Educators will grasp how AI can shift assessments from rote recall to <strong>authentic, high-agency tasks</strong> that naturally protect academic integrity.</p>
+                            <ul class="bullet-list">
+                                <li>Identify AI-resistant formats</li>
+                                <li>Evaluate data privacy risks</li>
+                            </ul>
+                        </div>
+                        <div class="obj-card" data-type="apply">
+                            <div class="obj-badge bg-emerald">Apply</div>
+                            <h3>Co-Create & Personalize</h3>
+                            <p>Educators will design <strong>formative assessments, rubrics, and lesson scaffolds</strong> tailored to diverse student needs using advanced prompting techniques.</p>
+                            <ul class="bullet-list">
+                                <li>Draft multi-level reading passages</li>
+                                <li>Construct objective-aligned rubrics</li>
+                            </ul>
+                        </div>
+                        <div class="obj-card" data-type="evaluate">
+                            <div class="obj-badge bg-cyan">Evaluate</div>
+                            <h3>Critical AI Auditing</h3>
+                            <p>Educators will learn to <strong>critically review and edit AI outputs</strong> for cultural bias, age appropriateness, hallucinations, and alignment with state standards.</p>
+                            <ul class="bullet-list">
+                                <li>Detect AI factual hallucinations</li>
+                                <li>Audit rubrics for hidden biases</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: Step-by-Step Session Flow -->
+            <section class="slide" id="slide-5">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">05</span>
+                        <h2>Step-by-Step Session Flow</h2>
+                        <p class="subtitle">The 120-Minute Synchronous Roadmap</p>
+                    </div>
+                    <div class="timeline-container">
+                        <div class="timeline-track"></div>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="time">00 - 15m</div>
+                                <div class="label">1. Hook & Perceptions</div>
+                                <div class="desc font-xs">Live pulse check, sharing worries & hope</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">15 - 35m</div>
+                                <div class="label">2. Mini-Input</div>
+                                <div class="desc font-xs">Frameworks: AI co-pilot, prompt structures</div>
+                            </div>
+                            <div class="timeline-item highlight-indigo">
+                                <div class="time">35 - 65m</div>
+                                <div class="label">3. Hands-On 1</div>
+                                <div class="desc font-xs">Assessment design & rubric prompt battles</div>
+                            </div>
+                            <div class="timeline-item highlight-emerald">
+                                <div class="time">65 - 90m</div>
+                                <div class="label">4. Hands-On 2</div>
+                                <div class="desc font-xs">Differentiating science for 3 student profiles</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">90 - 105m</div>
+                                <div class="label">5. Ethics & Integrity</div>
+                                <div class="desc font-xs">Debating scenarios, building safe checklists</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">105 - 120m</div>
+                                <div class="label">6. Action Planning</div>
+                                <div class="desc font-xs">MEL intro, commitments, exit ticket</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow-rationale-box">
+                        <p>💡 <strong>Pedagogical Design Rationale:</strong> This flow utilizes the <strong>gradual release of responsibility</strong> (I do, We do, You do). By placing the two hands-on activities in the middle, we harness peak energy and focus, leaving lecture elements minimized.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: Hands-On Activity 1 -->
+            <section class="slide" id="slide-6">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">06</span>
+                        <h2>Activity 1: Assessment Prompt Battle</h2>
+                        <p class="subtitle">30-Minute Synchronous Session Flow & Prompt Sandbox</p>
+                    </div>
+                    <div class="grid-2">
+                        <div class="activity-instructions">
+                            <h3>How it Works</h3>
+                            <ol class="numbered-list">
+                                <li><strong>Assemble:</strong> Work in grade-level breakout teams.</li>
+                                <li><strong>Build:</strong> Use the interactive prompt builder on the right to select variables, copy, and paste into ChatGPT or MagicSchool AI.</li>
+                                <li><strong>Refine:</strong> Critically audit the AI's output. Make at least <strong>three modifications</strong> to align with student context.</li>
+                                <li><strong>Share:</strong> Upload to the shared board for peer critique.</li>
+                            </ol>
+                            <div class="pedagogy-tip">
+                                <strong>Facilitator Tip:</strong> Watch for teachers who struggle with prompt specificity. Encourage them to specify the *target standard* and *grade level*.
+                            </div>
+                        </div>
+
+                        <div class="prompt-sandbox-card">
+                            <div class="sandbox-header">
+                                <h4>🛠️ Interactive Prompt Builder</h4>
+                                <span class="sandbox-badge">Try it Live</span>
+                            </div>
+                            <div class="sandbox-controls">
+                                <div class="control-group">
+                                    <label for="grade-select">Grade Level:</label>
+                                    <select id="grade-select">
+                                        <option value="Grade 4">Grade 4</option>
+                                        <option value="Grade 8" selected>Grade 8</option>
+                                        <option value="Grade 11">Grade 11</option>
+                                    </select>
+                                </div>
+                                <div class="control-group">
+                                    <label for="subject-select">Subject Topic:</label>
+                                    <select id="subject-select">
+                                        <option value="Photosynthesis and cell energy">Science: Photosynthesis</option>
+                                        <option value="Analyzing figurative language in poetry">English: Figurative Language</option>
+                                        <option value="Solving linear equations in real-world contexts">Math: Linear Equations</option>
+                                    </select>
+                                </div>
+                                <div class="control-group">
+                                    <label for="format-select">Assessment Format:</label>
+                                    <select id="format-select">
+                                        <option value="4 multiple-choice questions with detailed distractor rationale for misconceptions">Quiz with Distractor Rationale</option>
+                                        <option value="a 3-tier standards-aligned rubric focusing on critical thinking and process">Process Rubric</option>
+                                        <option value="a 2-question creative exit ticket requiring a real-world analogy">Exit Ticket with Analogy</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sandbox-output">
+                                <p id="prompt-output-text">Act as an expert K-12 curriculum designer. Create a standards-aligned Grade 8 assessment for Photosynthesis and cell energy. The output must be 4 multiple-choice questions with detailed distractor rationale for misconceptions. Ensure the reading level is age-appropriate and avoid generalities.</p>
+                            </div>
+                            <button id="copy-prompt-btn" class="copy-btn">📋 Copy Prompt to Clipboard</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: Hands-On Activity 2 -->
+            <section class="slide" id="slide-7">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">07</span>
+                        <h2>Activity 2: Personalized Pathways</h2>
+                        <p class="subtitle">25-Minute Sandbox Challenge: Differentiating a Core Concept</p>
+                    </div>
+                    <div class="grid-2">
+                        <div class="profiles-card">
+                            <h3>The Differentiated Classroom Challenge</h3>
+                            <p><strong>Goal:</strong> Differentiate a single core science topic (<em>"How ecosystems respond to natural disturbances"</em>) for three distinct student profiles:</p>
+                            
+                            <div class="student-profiles-stack">
+                                <div class="profile-item border-l-blue">
+                                    <strong>Profile A: Struggling Reader (Lexile 600L)</strong>
+                                    <p>Needs simplified vocabulary, shorter sentences, and visual analogical scaffold.</p>
+                                </div>
+                                <div class="profile-item border-l-green">
+                                    <strong>Profile B: Multilingual Learner (ELL Level 2)</strong>
+                                    <p>Needs dual-language vocabulary list, sentence starters, and bulleted steps.</p>
+                                </div>
+                                <div class="profile-item border-l-yellow">
+                                    <strong>Profile C: Advanced / Gifted Student</strong>
+                                    <p>Needs high-rigor inquiry prompt exploring open mathematical modeling of ecosystems.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scenario-sandbox-card">
+                            <h3>AI Prompt Template for Differentiation</h3>
+                            <div class="prompt-box">
+                                <p>"Differentiate the science topic 'Ecosystem Disturbances' for Grade 7. Generate three versions of the reading passage: 
+                                <br>1. Simplified vocabulary at 600L Lexile with graphic organizer scaffold. 
+                                <br>2. Language scaffolded with bold academic key terms and sentence starters. 
+                                <br>3. High-rigor extension prompt analyzing competitive species dynamics."</p>
+                            </div>
+                            <div class="sandbox-tools-badges">
+                                <span>Diffit AI</span>
+                                <span>Claude 3.5 Sonnet</span>
+                                <span>Brisk Teaching</span>
+                            </div>
+                            <div class="question-callout">
+                                <h4>Crucial Reflective Question:</h4>
+                                <p>"How do we use AI to remove barriers without removing the productive cognitive struggle required for real learning?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: Academic Integrity & Responsible AI -->
+            <section class="slide" id="slide-8">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">08</span>
+                        <h2>Academic Integrity & Responsible AI</h2>
+                        <p class="subtitle">Dismantling Plagiarism Detectors & Embracing Process</p>
+                    </div>
+                    <div class="ethics-grid">
+                        <div class="ethics-block">
+                            <h3>The Fallacy of AI Detection</h3>
+                            <p>Traditional AI detectors are highly unreliable, produce frequent <strong>false positives</strong>, and disproportionately flag writing by English Language Learners. TomoClub strongly recommends <strong>abandoning the arms race</strong>.</p>
+                        </div>
+                        <div class="ethics-block highlight-yellow">
+                            <h3>Designing AI-Resistant Assessments</h3>
+                            <ul class="ethics-list">
+                                <li>
+                                    <span class="bullet-num">1</span>
+                                    <div>
+                                        <strong>Grade the Process:</strong> Grade outlines, research drafts, and reflection logs rather than just final essays.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="bullet-num">2</span>
+                                    <div>
+                                        <strong>Oral Defenses:</strong> Incorporate short 2-minute slide-walkthroughs or peer presentations.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="bullet-num">3</span>
+                                    <div>
+                                        <strong>Hyper-Local Prompts:</strong> Connect assessments to classroom discussions or specific local events.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ethics-block full-width-block">
+                            <h3>TomoClub Responsible AI Educator Checklist</h3>
+                            <div class="checklist-grid">
+                                <div class="check-item">🛡️ <strong>Zero Student PII:</strong> Never enter student names or grades into open web AI models.</div>
+                                <div class="check-item">🧠 <strong>Human-in-the-Loop:</strong> Never send AI-generated work directly to students without editing.</div>
+                                <div class="check-item">🔓 <strong>Transparency:</strong> Clearly define "Green, Yellow, Red" zones for student AI use.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: MEL Framework: Sync & Formative -->
+            <section class="slide" id="slide-9">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">09</span>
+                        <h2>MEL Framework: Live Workshop</h2>
+                        <p class="subtitle">Monitoring, Evaluation & Learning during Synchronous Delivery</p>
+                    </div>
+                    <div class="grid-2">
+                        <div class="mel-sync-card">
+                            <h3>Formative Assessment Strategies</h3>
+                            <div class="mel-stack">
+                                <div class="mel-item">
+                                    <span class="mel-badge bg-blue">Pre-Session</span>
+                                    <strong>AI Familiarity Survey (Mentimeter)</strong>
+                                    <p>Diagnostic poll measuring teacher comfort (Fearful, Curious, User, Creator) and baseline AI vocabulary.</p>
+                                </div>
+                                <div class="mel-item">
+                                    <span class="mel-badge bg-emerald">Mid-Session</span>
+                                    <strong>Collaborative Auditing (Padlet)</strong>
+                                    <p>Groups upload a raw AI assessment and highlight three inaccuracies, biases, or modifications made by the team.</p>
+                                </div>
+                                <div class="mel-item">
+                                    <span class="mel-badge bg-cyan">End-Session</span>
+                                    <strong>Reflective Exit Ticket (Google Form)</strong>
+                                    <p>Requires teachers to match the 3 learning objectives with specific tools and identify one classroom use case.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mel-metrics-card">
+                            <h3>Sync Success Indicators & Metrics</h3>
+                            <div class="metrics-grid-compact">
+                                <div class="metric-box">
+                                    <div class="metric-num">&gt;85%</div>
+                                    <div class="metric-label">Active Participation</div>
+                                    <div class="metric-sub text-secondary">Uploading to shared board</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-num">90%</div>
+                                    <div class="metric-label">Objective Mastery</div>
+                                    <div class="metric-sub text-secondary">Passing scores on the exit check</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-num">&gt;4.5</div>
+                                    <div class="metric-label">NPS Score</div>
+                                    <div class="metric-sub text-secondary">Self-reported session utility</div>
+                                </div>
+                            </div>
+                            <div class="rubric-box">
+                                <h4>Exit Ticket Rubric Concept</h4>
+                                <p>Evaluators check: Did the teacher list a specific standard? Did they name a specific student scaffold? Did they list a safety consideration?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 10: MEL Framework: Async & Long-Term -->
+            <section class="slide" id="slide-10">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">10</span>
+                        <h2>MEL Framework: Async & Impact</h2>
+                        <p class="subtitle">Asynchronous Performance Tasks & Long-Term Impact Tracking</p>
+                    </div>
+                    <div class="grid-2">
+                        <div class="performance-task-card">
+                            <h3>The Submission Performance Task</h3>
+                            <p>To receive the Professional Development Certificate, educators must submit their <strong>Classroom AI Adaptation Folder</strong> within 14 days of the session:</p>
+                            <ul class="task-requirements">
+                                <li>📄 <strong>Resource A:</strong> One standards-aligned summative or formative assessment co-created with AI.</li>
+                                <li>🛠️ <strong>Resource B:</strong> Three differentiated reading level variations or accommodations generated by AI.</li>
+                                <li>📝 <strong>Prompt Log:</strong> The copy of the original prompt used, along with 3 bulleted points describing the specific revisions made to correct bias, rigor, or formatting.</li>
+                            </ul>
+                            <div class="eval-badge">Rubric Evaluated by TomoClub Staff</div>
+                        </div>
+
+                        <div class="long-term-impact">
+                            <h3>Long-Term Classroom Impact Indicators</h3>
+                            <p>We evaluate true professional development impact <strong>30-90 days post-session</strong> using three measurable indices:</p>
+                            
+                            <div class="impact-metrics-stack">
+                                <div class="impact-item">
+                                    <div class="impact-header">
+                                        <span class="impact-dot color-indigo"></span>
+                                        <strong>Workload Reduction Index</strong>
+                                    </div>
+                                    <p>Target: <strong>&gt;3 hours saved per week</strong> on grading & planning as reported in follow-up surveys.</p>
+                                </div>
+                                <div class="impact-item">
+                                    <div class="impact-header">
+                                        <span class="impact-dot color-emerald"></span>
+                                        <strong>Personalization Adoption Index</strong>
+                                    </div>
+                                    <p>Target: <strong>&gt;70% of teachers</strong> utilizing AI tools to generate at least two lessons for language learners monthly.</p>
+                                </div>
+                                <div class="impact-item">
+                                    <div class="impact-header">
+                                        <span class="impact-dot color-cyan"></span>
+                                        <strong>Assessment Integrity Index</strong>
+                                    </div>
+                                    <p>Target: <strong>&gt;60% of teachers</strong> switching at least one final written essay to oral defenses or multi-stage grading.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 11: Sync & Async Adaptation -->
+            <section class="slide" id="slide-11">
+                <div class="content">
+                    <div class="slide-header">
+                        <span class="slide-number">11</span>
+                        <h2>Sync vs. Async Adaptations</h2>
+                        <p class="subtitle">Flexible Formats Supporting Varied Teacher Schedules</p>
+                    </div>
+                    <div class="split-format-grid">
+                        <div class="format-card sync-outline">
+                            <div class="card-icon font-xl">👥</div>
+                            <h3>Synchronous Delivery</h3>
+                            <p class="format-sub">Best for school-wide PD days, collaborative cohorts, and team-building.</p>
+                            <ul class="format-list">
+                                <li>Live breakout rooms of 3-4 educators for direct role-play and prompt tests.</li>
+                                <li>Interactive board uploads for immediate peer review.</li>
+                                <li>Real-time debate of academic integrity case scenarios.</li>
+                                <li>Immediate facilitator support for technical prompt troubleshooting.</li>
+                            </ul>
+                        </div>
+                        <div class="format-card async-outline">
+                            <div class="card-icon font-xl">💻</div>
+                            <h3>Asynchronous Delivery</h3>
+                            <p class="format-sub">Best for self-paced school networks, continuous learning, and remote coaches.</p>
+                            <ul class="format-list">
+                                <li>Interactive micro-video lessons (5-7 mins each) with embedded check questions (Edpuzzle).</li>
+                                <li>Prompt logs submitted to school LMS forum with structured peer feedback guidelines.</li>
+                                <li>Async text-based roleplay scenario boards (Padlet).</li>
+                                <li>Digital "Prompt Playground" with saved templates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: Closing Reflection -->
+            <section class="slide title-slide" id="slide-12">
+                <div class="hero-overlay"></div>
+                <div class="content">
+                    <div class="closing-quote">
+                        <blockquote>
+                            "AI will not replace educators. Educators who understand how to use AI effectively and responsibly will be better positioned to support diverse learners in future-ready classrooms."
+                        </blockquote>
+                    </div>
+                    <div class="tomo-alignment">
+                        <span class="logo-circle"></span>
+                        <p>Empowering teachers, supporting agency, and designing practical experiences.</p>
+                    </div>
+                    <div class="thank-you">
+                        <h1>Thank You</h1>
+                        <p class="sub-thanks">Curriculum Specialist Application | TomoClub 2026</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- NAVIGATION CONTROLS -->
+        <div class="controls no-print">
+            <button id="prev-btn" class="nav-btn" aria-label="Previous Slide">←</button>
+            <div class="progress-container">
+                <div id="progress-fill"></div>
+            </div>
+            <button id="next-btn" class="nav-btn" aria-label="Next Slide">→</button>
+        </div>
+        
+        <div class="slide-counter no-print"><span id="current-slide">1</span> / 12</div>
+    </div>
+
+
+    <!-- PRESENTER PORTAL SIDEBAR -->
+    <div id="presenter-portal" class="no-print">
+        <div class="portal-header">
+            <h3>🎙️ Presenter Portal & Loom Guide</h3>
+            <button id="portal-close-btn" class="close-btn">×</button>
+        </div>
+        
+        <!-- AI Voice Narration Player -->
+        <div class="voice-player-bar">
+            <button id="play-voice-btn" class="voice-player-btn play">▶️ Read Aloud</button>
+            <button id="stop-voice-btn" class="voice-player-btn stop" style="display: none;">⏹️ Stop</button>
+            <select id="voice-select" class="voice-dropdown-select">
+                <option value="">Default AI Voice</option>
+            </select>
+            <label class="autoplay-label" title="Auto-read script on slide changes">
+                <input type="checkbox" id="autoplay-voice"> Auto-read
+            </label>
+        </div>
+
+        <div class="portal-tabs">
+            <button class="portal-tab active" data-tab="loom-script">Loom Script / Rationale</button>
+            <button class="portal-tab" data-tab="fac-notes">Facilitator Notes</button>
+        </div>
+        <div class="portal-content">
+            <div id="loom-script" class="tab-pane active">
+                <div class="script-card">
+                    <div class="script-badge">Verbatim Rationale Script</div>
+                    <p id="script-content-text">Loading script...</p>
+                </div>
+            </div>
+            <div id="fac-notes" class="tab-pane">
+                <div class="notes-card">
+                    <div class="script-badge">Active Facilitation Guide</div>
+                    <p id="notes-content-text">Loading notes...</p>
+                </div>
+            </div>
+        </div>
+        <div class="portal-footer">
+            <div class="shortcut-tip">💡 Tip: Press the <strong>"P"</strong> key to toggle this drawer on/off as you practice recording your Loom video!</div>
+        </div>
+    </div>
+
+
+    <!-- FULL DETAILED PRINTABLE SUBMISSION DOCUMENT -->
+    <div id="submission-document" class="report-view-container print-ready" style="display: none;">
+        <div class="doc-controls no-print">
+            <button id="print-layout-btn" class="print-action-btn">🖨️ Open Browser Print Dialog (Save PDF)</button>
+            <p class="print-instruction">Ensure you set the layout to <strong>Portrait</strong>, check <strong>Background graphics</strong>, and set margins to <strong>Default</strong> for a stunning PDF output!</p>
+        </div>
+
+        <article class="formal-document">
+            <header class="doc-header">
+                <div class="doc-badge">TOMOCLUB CURRICULUM DEVELOPMENT ASSIGNMENT</div>
+                <h1>Curriculum Design & Evaluation Framework</h1>
+                <h2>Topic: AI Use in Assessments and Personalisation</h2>
+                <div class="doc-meta-grid">
+                    <div><strong>Author:</strong> Pramit Das</div>
+                    <div><strong>Date:</strong> May 17, 2026</div>
+                    <div><strong>Position:</strong> Curriculum Development Specialist Applicant</div>
+                    <div><strong>Context:</strong> K-12 Educator Professional Development</div>
+                </div>
+            </header>
+
+            <hr class="doc-divider">
+
+            <section class="doc-section">
+                <h2>1. Course Specifications & Context</h2>
+                <p>Modern classrooms are faced with a challenging trilemma: overwhelming administrative workload, extreme differences in student learning levels, and deep anxieties surrounding generative AI and academic integrity. This curriculum is designed for <strong>TomoClub</strong> to bridge this gap, equipping teachers with practical, ethical, and highly effective frameworks to use AI as an active "teacher co-pilot" rather than an administrative replacement or a policing tool.</p>
+                
+                <table class="doc-table">
+                    <tr>
+                        <td><strong>Session Title</strong></td>
+                        <td>Designing Smarter Classrooms: AI Use in Assessments and Personalisation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Target Audience</strong></td>
+                        <td>K-12 Classroom Teachers, Instructional Designers, Coaches, and School Leaders. (Highly adaptable for varied technical comfort levels).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Recommended Duration</strong></td>
+                        <td>2 Hours (120 Minutes) in a high-engagement synchronous format, backed by 14 days of asynchronous application.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expected Takeaways</strong></td>
+                        <td>
+                            <ul>
+                                <li>A library of battle-tested, standard-aligned assessment prompts.</li>
+                                <li>Two active-built classroom resources (one quiz/rubric, one differentiated lesson scaffold).</li>
+                                <li>A school-wide "Responsible AI" safety checklist protecting student privacy.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="doc-section">
+                <h2>2. Learning Objectives Framework</h2>
+                <p>The learning objectives are structured intentionally across multiple cognitive dimensions—modeled on Bloom's Revised Taxonomy—to ensure educators do not just absorb theory, but actively build, critically audit, and safely implement AI systems in their schools.</p>
+                
+                <div class="doc-grid-3">
+                    <div class="doc-obj-box">
+                        <h3>1. Understand (Pedagogical Shift)</h3>
+                        <p>Educators will understand the pedagogical shift from rote, recall-based grading to **authentic, process-oriented assessment** that naturally protects academic integrity and amplifies student agency in the age of generative AI.</p>
+                    </div>
+                    <div class="doc-obj-box">
+                        <h3>2. Apply (Co-Creation & Sandbox)</h3>
+                        <p>Educators will be able to apply advanced prompting techniques (role-based, context-rich prompting) to **co-create and differentiate standards-aligned assessments, clear rubrics, and personalized reading scaffolds** matching student reading levels (Lexile) or linguistic needs.</p>
+                    </div>
+                    <div class="doc-obj-box">
+                        <h3>3. Evaluate (Critical AI Auditing)</h3>
+                        <p>Educators will be able to **critically audit and revise AI-generated outputs** for factual accuracy (detecting hallucinations), demographic or cultural bias, grade-level vocabulary appropriateness, and direct pedagogical alignment.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="doc-section">
+                <h2>3. 120-Minute Step-by-Step Session Flow</h2>
+                <p>The session is built using the "Sandwich" active learning model: minimizing passive listening blocks to a maximum of 20 minutes, followed immediately by collaborative hands-on sandboxes. This prevents cognitive overload and caters to different technical comfort levels.</p>
+
+                <table class="doc-flow-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">Time Block</th>
+                            <th style="width: 25%;">Phase & Title</th>
+                            <th style="width: 40%;">Step-by-Step Flow & Participant Activities</th>
+                            <th style="width: 20%;">AI Tools & Deliverables</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>00 - 15m</strong><br>(15 Mins)</td>
+                            <td><strong>1. Hook & Perceptions</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Activity:</strong> Live polling using Mentimeter asking: <em>"What is your single biggest fear and single biggest hope regarding AI in your classroom?"</em></li>
+                                    <li><strong>Discussion:</strong> Review word cloud. Frame AI not as a magical savior, but as a co-pilot that requires professional teacher judgment.</li>
+                                    <li><strong>Facilitator Note:</strong> Establish a safe environment. Address fears directly (e.g., cheating, workload pressure).</li>
+                                </ul>
+                            </td>
+                            <td>Mentimeter poll. <br><em>Deliverable: Baseline cohort alignment.</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>15 - 35m</strong><br>(20 Mins)</td>
+                            <td><strong>2. Mini-Input: Assessment & Prompting</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Lecture Block:</strong> Introduce the 4-part Prompt Engineering framework: <strong>Role + Context + Standard/Task + Constraints</strong>.</li>
+                                    <li><strong>Demonstration:</strong> Walkthrough comparing a poor prompt vs. a highly specific, professional prompt. Show how to prompt for distractors targeting common misconceptions.</li>
+                                    <li><strong>Reflection Check:</strong> How the standard remains the target, and AI simply accelerates creation.</li>
+                                </ul>
+                            </td>
+                            <td>ChatGPT, Claude. <br><em>Deliverable: Prompt guide cheat sheet.</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>35 - 65m</strong><br>(30 Mins)</td>
+                            <td><strong>3. Hands-On 1: Assessment Prompt Battle</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Breakout Group Task:</strong> Teachers split into grade-level bands (Grade 3-5, 6-8, 9-12).</li>
+                                    <li><strong>Sandbox Creation:</strong> Educators use pre-configured templates to draft a standards-aligned quiz or a 3-tier standards rubric.</li>
+                                    <li><strong>Critical Auditing:</strong> Teachers must change at least three elements of the AI's output to fit their curriculum, highlighting what they corrected (e.g., vocabulary too complex, standard misalignment).</li>
+                                    <li><strong>Coaching:</strong> Facilitator jumps between rooms to debug prompts.</li>
+                                </ul>
+                            </td>
+                            <td>MagicSchool AI, ChatGPT, Padlet. <br><em>Deliverable: One audited formative check or rubric.</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>65 - 90m</strong><br>(25 Mins)</td>
+                            <td><strong>4. Hands-On 2: Personalized Pathways</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Task:</strong> Differentiate a single scientific reading concept (<em>Ecosystem Natural Disturbances</em>) for three distinct student profiles:
+                                        <ol>
+                                            <li>A struggling reader needing vocabulary scaffolding and lower Lexile (600L).</li>
+                                            <li>A multilingual student needing dual-language glossaries and sentence frames.</li>
+                                            <li>An advanced student needing high-rigor inquiry extensions.</li>
+                                        </ol>
+                                    </li>
+                                    <li><strong>Peer Review:</strong> Upload differentiated reading sets to a shared drive and trade copies with a peer.</li>
+                                </ul>
+                            </td>
+                            <td>Diffit, Claude, Brisk Teaching. <br><em>Deliverable: Three differentiated reading tiers.</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>90 - 105m</strong><br>(15 Mins)</td>
+                            <td><strong>5. Academic Integrity & Ethics</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Interactive Debate:</strong> "Would You Allow It?" review of classroom case scenarios.</li>
+                                    <li><strong>Conceptual Focus:</strong> Dismantling AI detector bias. Transitioning from final grading to process grading (grading outline, draft, oral synthesis).</li>
+                                    <li><strong>Safety Briefing:</strong> Strict warnings against entering student PII into external models.</li>
+                                </ul>
+                            </td>
+                            <td>Interactive scenario slides.<br><em>Deliverable: Custom Green-Yellow-Red AI boundary list.</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>105 - 120m</strong><br>(15 Mins)</td>
+                            <td><strong>6. Action Planning & Reflection</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Action Commitments:</strong> Teachers write down one lesson they will redesign next week using AI.</li>
+                                    <li><strong>MEL Framework:</strong> Introduce the 14-day async performance task for PD certification.</li>
+                                    <li><strong>Session Evaluation:</strong> Final reflective exit ticket check.</li>
+                                </ul>
+                            </td>
+                            <td>Google Forms Exit Ticket.<br><em>Deliverable: Completed workshop exit ticket.</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="doc-section">
+                <h2>4. Monitoring, Evaluation & Learning (MEL) Framework</h2>
+                <p>To prove the effectiveness of the professional development session, the MEL plan is built to evaluate changes in participant confidence, direct skills transfer, and long-term classroom impacts across both synchronous and asynchronous learning formats.</p>
+
+                <h3>A. Synchronous Evaluation (During the Live Session)</h3>
+                <ul>
+                    <li><strong>Pre-Session Diagnostics:</strong> A baseline pulse poll (Mentimeter) to categorize educator levels (Novice, Explorer, Practitioner, Champion) and track baseline understanding of prompt guidelines.</li>
+                    <li><strong>Formative Milestones:</strong> 
+                        <ul>
+                            <li><em>Milestone 1 (Prompt Sandbox):</em> Reviewing the quality of prompts created in the Activity 1 breakout. Facilitators evaluate prompt specificity using a simple 3-star checklist (Standard specified? Constraints included? Role defined?).</li>
+                            <li><em>Milestone 2 (Shared Critique Board):</em> Reviewing uploaded materials on Padlet to assess if teachers are successfully identifying and correcting AI factual inaccuracies and bias.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Summative Session Check:</strong> A digital "Exit Ticket" Google Form requiring teachers to score their confidence on the three learning objectives (1-5 scale) and match standard alignment criteria.</li>
+                </ul>
+
+                <h3>B. Asynchronous Evaluation (PD Certification Performance Task)</h3>
+                <p>To receive full TomoClub professional development credit, participants must submit their <strong>Classroom AI Adaptation Folder</strong> within 14 days. This ensures that theory transfers to active practice.</p>
+                
+                <table class="doc-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">Performance Task Deliverables</th>
+                            <th style="width: 40%;">Assessment Criteria & Rubric Indicators</th>
+                            <th style="width: 30%;">Mastery Thresholds</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Co-Created Formative Assessment</strong><br>(Quiz, Exit Ticket, or Rubric)</td>
+                            <td>Clear alignment to a state or national learning standard; inclusion of common student misconceptions as distractor options; clear student-facing language.</td>
+                            <td>Standard alignment clearly listed; minimum of 3 distractor rationales provided.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Differentiated Scaffolding Set</strong><br>(Passage or activity with 3 variations)</td>
+                            <td>Clear target variations (Lexile, language, or enrichment); preservation of rigor (not just lowering standards, but lowering reading accessibility barrier).</td>
+                            <td>Three distinct levels with explicit scaffolds outlined.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Prompt Log & Reflection Report</strong><br>(The "Meta-Audit")</td>
+                            <td>Submission of the exact AI prompts used; 3 bulleted annotations describing specific changes made by the teacher to correct hallucinations, simplify vocabulary, or remove bias.</td>
+                            <td>Clear proof of critical editing (AI output was not just blindly copied).</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>C. Long-Term Impact Indicators (30-90 Days Post-Session)</h3>
+                <p>The ultimate goal is systemic change. TomoClub tracks cohort outcomes long-term using the following metrics:</p>
+                <div class="doc-grid-3">
+                    <div class="doc-obj-box">
+                        <h4>Workload Reduction</h4>
+                        <p><strong>Metric:</strong> Self-reported prep time saved.<br><strong>Target:</strong> &gt;75% of cohort reporting saving **3+ hours per week** on routine planning and quiz design within 30 days.</p>
+                    </div>
+                    <div class="doc-obj-box">
+                        <h4>Differentiated Instruction</h4>
+                        <p><strong>Metric:</strong> Tool usage logs.<br><strong>Target:</strong> &gt;70% of teachers reporting using AI to create at least **two personalized resources** for special education or ELL students monthly.</p>
+                    </div>
+                    <div class="doc-obj-box">
+                        <h4>Assessment Quality Shift</h4>
+                        <p><strong>Metric:</strong> Assessment design changes.<br><strong>Target:</strong> &gt;60% of teachers reporting moving at least one high-stakes written assignment to a **process-oriented assessment** (oral defense, portfolio, or drafts).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="doc-section">
+                <h2>5. Sync vs. Async Adaptation Strategy</h2>
+                <p>The curriculum is designed as a modular framework, allowing seamless transition between live synchronous professional development cohorts and self-paced asynchronous online learning modules.</p>
+                
+                <table class="doc-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">Synchronous Format (Virtual / In-Person)</th>
+                            <th style="width: 50%;">Asynchronous Format (Self-Paced LMS)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Active Collaboration:</strong> Breakout rooms of 3-4 teachers for active role-play. Teachers share screens and construct prompts live.
+                            </td>
+                            <td>
+                                <strong>Self-Paced Mini-Videos:</strong> 120 minutes is broken into 6 micro-learning videos (5-8 mins each) with embedded check questions (Edpuzzle).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Real-Time Discussion:</strong> Interactive pulse polls (Mentimeter) and chat debates on ethics cases. Immediate sharing on a collective Padlet board.
+                            </td>
+                            <td>
+                                <strong>Prompt Forums:</strong> Teachers post their prompt inputs and generated outputs on a school forum, with mandatory guidelines to peer-review two other colleagues' materials.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Instant Feedback:</strong> Facilitator and coaches jump into breakouts to troubleshoot prompt issues, fix errors, and guide teachers.
+                            </td>
+                            <td>
+                                <strong>Interactive Sandbox Playgrounds:</strong> Built-in prompt builders (like the one in Slide 6) allowing teachers to generate, copy, and test templates.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="doc-section">
+                <h2>6. Loom Video Presentation Script & Rationale</h2>
+                <p>To support a comprehensive understanding, the following verbatim script and detailed rationale matches the presentation slides, explaining the pedagogical framework, assessment design, and teacher engagement strategies.</p>
+                
+                <div class="loom-transcript-box">
+                    <h4>Verbatim Loom Rationale & Rationale Outline</h4>
+                    <p><em>(Use this outline and the verbatim scripts inside the slide-out Presenter Portal to record your Loom video submission. This direct walkthrough is structured slide-by-slide to answer all required application questions in depth.)</em></p>
+                    
+                    <ul>
+                        <li><strong>Why the session is structured this way (The "Sandwich" Model):</strong> The workshop is organized around active learning, minimizing lecture time. Educators are adults with limited attention spans for pure technology lectures; they learn by building. We present 20 minutes of theory, followed immediately by 30 minutes of building, then 25 minutes of differentiation sandbox. This ensures the cognitive load is immediately managed and applied.</li>
+                        <li><strong>Why these specific activities were chosen:</strong> 
+                            <ul>
+                                <li><em>Activity 1 (Assessment Prompt Battle):</em> Demystifies prompt engineering by giving teachers concrete templates. It immediately proves that AI can generate rubrics and quiz options, saving them hours. The "Battle" element turns grading into a collaborative, creative challenge rather than a solitary chore.</li>
+                                <li><em>Activity 2 (Personalized Pathways):</em> Focuses on empathy and practical equity. By presenting three specific student profiles (struggling reader, ELL student, advanced student), we move personalization from a generic buzzword to a concrete set of Lexile and translation steps.</li>
+                            </ul>
+                        </li>
+                        <li><strong>How the assessments connect to objectives:</strong> Every single assessment in the MEL framework is anchored to our learning objectives. The Sync Padlet check evaluates their ability to **Evaluate (Audit)** AI bias. The Async Performance Task directly requires them to **Apply** role-based prompts to create a lesson folder, and submit a **Reflection Log** checking their **Critical Evaluation** of the AI.</li>
+                        <li><strong>Balancing practical AI use with responsibility:</strong> We directly address the elephant in the room—academic integrity. Instead of teaching educators how to use flawed plagiarism software to "catch" kids, we teach them how to design **AI-resistant, process-oriented assessments** (oral defenses, multi-stage drafts). We also provide a strict privacy checklist: never enter student personal identifiable information (PII) into open models.</li>
+                        <li><strong>Engaging educators with different comfort levels:</strong> We design the material with multiple entry tiers. Novice users are provided with pre-configured dropdown prompt builders (requiring zero typing or coding), while advanced users are encouraged to write custom Claude system prompts. Cooperative group work ensures that technical champions and novices are paired together, fostering community-led learning.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <footer class="doc-footer">
+                <p>TomoClub Curriculum Design Specialist Assignment Submission. © 2026 Pramit Das. All Rights Reserved.</p>
+            </footer>
+        </article>
+    </div>
+
+    <!-- MAIN APP SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
